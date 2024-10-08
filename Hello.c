@@ -2,7 +2,10 @@
 #include<math.h>
 
 int main() {
-    printf("%f", 2.0/3);
-    return 0;
+    int a = 1;
+    int b =4;
+    a -= b;
+   printf("%d \n", a);
+  return 0;
 }
 

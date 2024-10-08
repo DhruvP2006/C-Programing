@@ -21,4 +21,30 @@
 // }
 
 // Type conversion
-#include<st
+// #include<stdio.h>
+// int main(){
+// printf("%d \n", 4>3 && 5>2);
+//   return 0;
+// }
+
+// Number divisible by 2
+// #include<stdio.h>
+// int main(){
+//   int a = 4;
+//   printf("%d", a>9 && a<100);
+//   return 0;
+// }
+
+// print avg of 3 no.
+// #include<stdio.h>
+
+// int main(){
+//   int a, b, c;
+//   printf("Enter 3 numbers: ");
+//   scanf("%d", &a);
+//   scanf("%d", &b);
+//   scanf("%d", &c);
+//   printf("The average of the 3 numbers is: %d", (a+b+c)/3);
+// }
+
+// check if char is digit
