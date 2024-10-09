@@ -47,4 +47,73 @@
 //   printf("The average of the 3 numbers is: %d", (a+b+c)/3);
 // }
 
-// check if char is digit
+// pass fail
+// #include<stdio.h>
+
+// int main(){
+//   int marks;
+//   printf("Enter your marks: ");
+//   scanf("%d", &marks);
+//   if(marks<=30 && marks>=0){
+//     printf("Fail\n");
+//   }
+//   else if(marks>30 && marks<=100){
+//   printf("Pass\n");
+//   }
+//   else{
+//     printf("Wrong marks\n");
+//   }
+//   marks<=30? printf("Fail"):printf("pass");
+//   return 0;
+// }
+
+//grading of marks
+// #include<stdio.h>
+
+// int main(){
+//   int marks;
+//   printf("Enter your marks: ");
+//   scanf("%d", &marks);
+//   if(marks<30 && marks>=0){
+//     printf("Grade: C\n");
+//   }
+//   else if(marks>=30 && marks<70){
+//     printf("Grade: B\n");
+//   }
+//   else if(marks>=70 && marks<90){
+//     printf("Grade: A\n");
+//   }
+//   else{
+//     printf("Grade: A+\n")
+//   }
+//   return 0;
+// }
+
+//check upper or lower case
+// #include<stdio.h>
+
+// int main(){
+//   char ch;
+//   printf("Enter a Character: \n");
+//   scanf("%c", &ch);
+//   if(ch>='a' && ch<='z'){
+//     printf("Lower case\n");
+//   }
+//   else if(ch>='A' && ch<='Z'){
+//     printf("Upper Case \n");
+//   }
+//   else{
+//     printf("Not an Alphabet\n");
+//   }
+// return 0;
+// }
+
+//Check Armstrong number
+#include<stdio.h>
+
+int main(){
+  int num;
+  printf("Enter a Number: ");
+  scanf("%f", &num);
+  if(num =)
+}
