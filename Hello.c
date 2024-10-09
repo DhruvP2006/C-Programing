@@ -1,15 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int i;
-  do{
-    printf("Enter a Number: ");
-    scanf("%d", &i);
-    printf("%d \n", i);
-    if(i%2 == 1){
-      break;
+  for(int i=5; i<=50; i++){
+    if(i%2==0){
+       continue;
     }
-  }while(1);
+    printf("%d \n", i);
+  }
+
 return 0;
 }
 

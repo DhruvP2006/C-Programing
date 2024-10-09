@@ -108,12 +108,57 @@
 // return 0;
 // }
 
-//Check Armstrong number
-#include<stdio.h>
+// odd numbers
+// #include <stdio.h>
 
-int main(){
-  int num;
-  printf("Enter a Number: ");
-  scanf("%f", &num);
-  if(num =)
-}
+// int main() {
+//   for(int i=5; i<=50; i++){
+//     if(i%2==0){
+//        continue;
+//     }
+//     printf("%d \n", i);
+//   }
+
+// return 0;
+// }
+
+//factorial
+// #include<stdio.h>
+
+// int main(){
+//   int num;
+//   int fact=1;
+//   printf("Enter a Number: ");
+//   scanf("%d", &num);
+//   for(int i = num; i>=1; i--){
+//     fact = i*fact;
+//   }
+//   printf("%d", fact);
+//   return 0;
+// }
+
+// reverse table
+// #include<stdio.h>
+
+// int main(){
+//   int num;
+//   printf("Enter a Number: ");
+//   scanf("%d", &num);
+//   for(int i =10; i>=0; i--){
+//     printf("%d \n", i*num);
+//   }
+//   return 0;
+// }
+
+// sum of no. between 5, 50
+// #include<stdio.h>
+
+// int main(){
+//   int j = 0;
+//   for(int i = 5; i<=50; i++){
+//     j += i;
+//   }
+//   printf("%d", j);
+// }
+
+// nested loops
