@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-int main() {
-  for(int i=5; i<=50; i++){
-    if(i%2==0){
-       continue;
-    }
-    printf("%d \n", i);
-  }
+void printhello();
 
+int main() {
+  printhello();
 return 0;
 }
 
+void printhello(){
+  printf("Hello! \n");
+}

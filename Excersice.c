@@ -161,4 +161,77 @@
 //   printf("%d", j);
 // }
 
-// nested loops
+//functions
+// #include<stdio.h>
+
+// void indian();
+// void french();
+
+// int main(){
+//   indian();
+//   french();
+//   return 0;
+// }
+
+// void indian(){
+//   printf("Namaste\n");
+// }
+
+// void bye(){
+//   printf("Bonjour\n");
+// }
+
+//sum function
+// #include<stdio.h>
+
+// int sum(int num1, int num2);
+
+// int main(){
+//   int a, b;
+//   printf("Enter First Number: ");
+//   scanf("%d", &a);
+//   printf("Enter Second Number: ");
+//   scanf("%d", &b);
+//   int s = sum(a, b);
+//   printf("%d", s);
+// }
+
+// int sum(int num1, int num2){
+//   return num1 + num2;
+  
+// }
+
+//tbale using function
+// #include<stdio.h>
+
+// int calcPrice(float price);
+
+// int main(){
+//   printf("Enter Price: ");
+//   float a;
+//   scanf("%f", &a);
+//   calcPrice(a);
+//   return 0;
+// }
+
+// int calcPrice(float price){
+//   printf("%f", price+(price*0.18));
+// }
+
+// Square of a number
+#include<stdio.h>
+#include<math.h>
+
+int sqnum(int num);
+
+int main(){
+  printf("Enter a Number: ");
+  int a;
+  scanf("%d", &a);
+  sqnum(a);
+  return 0;
+}
+
+int sqnum(int num){
+  printf("%d", pow(num, 2));
+}
