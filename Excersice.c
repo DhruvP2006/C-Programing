@@ -272,19 +272,29 @@
 
 // Recursion
 // sum of n natural numbers
+// #include<stdio.h>
+
+// int natural_num(int n);
+
+// int main(){
+//  int sum = natural_num(5);
+//  printf("%d", sum);
+// }
+
+// int natural_num(int num){
+//   if(num ==1){
+//     return 1;
+//   }
+//   int a = natural_num(num-1);
+//   int b  = a+ num;
+// }
+
+// Star Pattern
 #include<stdio.h>
 
-int natural_num(int n);
-
 int main(){
- int sum = natural_num(5);
- printf("%d", sum);
+
+
+return 0;
 }
 
-int natural_num(int num){
-  if(num ==1){
-    return 1;
-  }
-  int a = natural_num(num-1);
-  int b  = a+ num;
-}
