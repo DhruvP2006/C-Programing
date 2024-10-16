@@ -219,19 +219,72 @@
 // }
 
 // Square of a number
-#include<stdio.h>
-#include<math.h>
+// #include<stdio.h>
+// #include<math.h>
 
-int sqnum(int num);
+// int sqnum(int num);
+
+// int main(){
+//   printf("Enter a Number: ");
+//   int a;
+//   scanf("%d", &a);
+//   sqnum(a);
+//   return 0;
+// }
+
+// int sqnum(int num){
+//   printf("%f", pow(num, 2));
+// }
+
+// Area of Square, Circle & rectangle
+// #include<stdio.h>
+// #include<math.h>
+
+// float area_square(float side_square);
+// float area_circle(float radius);
+// float area_rectabgle(float side_a, float side_b);
+
+// int main(){
+//   int a, b, c, d;
+//   printf("Enter the side of a Square:");
+//   scanf("%f", &a);
+//   area_square(a);
+//     printf("Enter the radius of a Circle:");
+//   scanf("%f", &b);
+//   area_circle(b);
+//     printf("Enter the side 1 of a Rectangle:");
+//   scanf("%f", &c);
+//    printf("Enter the side 2 of a Rectangle:");
+//   scanf("%f", &d);
+//   area_rectabgle(c, d);
+//   return 0;
+// }
+
+// float area_square(float side_square){
+//   printf("%f \n", pow(side_square, 2));
+// }
+// float area_circle(float radius){
+//     printf("%f \n", 3.14*pow(radius,2));
+// }
+// float area_rectabgle(float side_a, float side_b){
+//   printf("%f \n", side_a*side_b);
+// }
+
+// Recursion
+// sum of n natural numbers
+#include<stdio.h>
+
+int natural_num(int n);
 
 int main(){
-  printf("Enter a Number: ");
-  int a;
-  scanf("%d", &a);
-  sqnum(a);
-  return 0;
+ int sum = natural_num(5);
+ printf("%d", sum);
 }
 
-int sqnum(int num){
-  printf("%d", pow(num, 2));
+int natural_num(int num){
+  if(num ==1){
+    return 1;
+  }
+  int a = natural_num(num-1);
+  int b  = a+ num;
 }

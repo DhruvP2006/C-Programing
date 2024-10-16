@@ -1,12 +1,16 @@
 #include <stdio.h>
 
-void printhello();
+void printHW(int count);
 
-int main() {
-  printhello();
-return 0;
+int main(){
+  printHW(5);
+  return 0;
 }
 
-void printhello(){
-  printf("Hello! \n");
+void printHW(int count){
+  if(count == 0){
+    return;
+  }
+  printf("Hello World!\n");
+  printHW(count-1);
 }
