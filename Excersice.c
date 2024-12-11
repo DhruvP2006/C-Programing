@@ -289,12 +289,78 @@
 //   int b  = a+ num;
 // }
 
-// Star Pattern
-#include<stdio.h>
+// Factorial
+// #include<stdio.h>
 
-int main(){
+// int fact(int n);
+
+// int main(){
+//   printf("Factorial is :%d", fact(5));
+// return 0;
+// }
+
+// int fact(int n){
+//   if(0 == n){
+//     return 1;
+//   }
+//   int factN = fact(n-1)*n;
+//   return factN;
+// }
+
+// Function to convert Celcius to Fahrenheit
+// #include<stdio.h>
+
+// float convert(float c);
+
+// int main(){
+//   printf("The temperature in Farenheit is: %f", convert(5));
+//   return 0;
+// }
+
+// float convert(float c){
+//   float f = (c*(9/5))+32;
+//   return f;
+// }
+
+// Calculate Percentage
+// #include<stdio.h>
+
+// float percentage(int science, int math, int sanskrit);
+
+// int main(){
+//   int sc = 98;
+//   int math = 95;
+//   int sans = 99;
+//   printf("The total percentage is: %f", percentage(sc, math, sans));
+//   return 0;
+// }
+
+// float percentage(int science, int math, int sanskrit){
+//   return((science+math+sanskrit)/3);
+// }
 
 
-return 0;
-}
+// print fibonacci series
+// #include<stdio.h>
 
+// int fibonacci(int n);
+
+// int main(){
+//   printf("%d", fibonacci(6));
+// }
+
+// int fibonacci(int n){
+//   if(n == 0 || n == 1){
+//     if(n==0){
+//       return 0;
+//     }
+//     if(n==1){
+//       return 1;
+//     }
+//       }
+//   int fib = fibonacci(n-1)+fibonacci(n-2);
+//   printf("%d", fib);
+//   return fib;
+// }
+
+// Pointer ----------------------------------------------------------------
