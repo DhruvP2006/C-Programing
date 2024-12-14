@@ -364,3 +364,118 @@
 // }
 
 // Pointer ----------------------------------------------------------------
+// * - Value at address
+// & - address of 
+// to print address stored in a pointer variable use %p for hexadeciaml, %u - unsigned int 
+// #include<stdio.h>
+
+// int main(){
+//   int i = 5;
+//   int *ptr = &i;
+//   int **pptr = &ptr;
+//   printf("%d \n", **pptr);
+// }
+
+// #include<stdio.h>
+
+
+// void square (int n);
+// void _square(int *n);
+
+// int main(){
+// int number = 4;
+// int *num = &number;
+// square(number);
+// _square(num);
+// printf("number = %d \n", number);
+// return 0;
+// }
+// // call by value
+// void square(int n){
+//   n = n* n;
+//   printf("square = %d\n", n);
+// }
+
+// void _square(int *n){
+//   *n = (*n) * (*n);
+//   printf("square = %d \n", *n);
+// }
+
+// Number Swaping
+// #include<stdio.h>
+
+// void swap(int *a, int *b);
+
+// int main(){
+//   int x = 23;
+//   int y = 45;
+//   printf("First Number: %d \n", x);
+//   printf("Second Number: %d \n", y);
+//   swap(&x, &y);
+//   return 0;
+// }
+
+// void swap(int *a, int *b){
+//   int c = *a;
+//   *a = *b;
+//   *b = c;
+//     printf("First Number: %d \n", *a);
+//   printf("Second Number: %d \n", *b);
+// }
+
+// Printing Address
+// #include<stdio.h>
+
+// void printadd(int *n);
+
+// int main(){
+//   int a = 45;
+//   printadd(&a);
+//   printf("address of a in %u \n", &a);
+//   return 0;
+// }
+
+// void printadd(int *n){
+//   printf("address of a in %u \n", n);
+// }
+
+// function to print sum, product, average, and average of the 3 functions
+// #include<stdio.h>
+
+// void maths(int a, int b, int *sum, int *product, int *average);
+
+
+// int main(){
+//   int x =23, y = 33;
+//   int sum, product, average;
+//   maths(x, y, &sum, &product, &average);
+
+//   printf("sum = %d", "product = %d", "average = %d", sum, product, average);
+//   return 0;
+// }
+
+// void maths(int *a, int *b, int *sum, int *product, int *average){
+//   *sum = a+b;
+//   *product = a*b;
+//   *average = (a+b)/2;
+// }
+
+
+// Arrays --------------------------------------------------------------------------------------
+// #include<stdio.h>
+
+// int main(){
+//   float price[3];
+//   printf("Enter Price of First Item: ");
+//   scanf("%f", &price[0]);
+//   printf("Enter Price of Second Item: ");
+//   scanf("%f", &price[1]);
+//   printf("Enter Price of Third Item: ");
+//   scanf("%f", &price[2]);
+//   float sum = (price[0] + price[1] + price[2]) + (0.18*(price[0] + price[1] + price[2]));
+//   printf("The Final Price of the Items is %f", sum);
+
+//   return 0;
+// }
+
+as
