@@ -462,6 +462,8 @@
 
 
 // Arrays --------------------------------------------------------------------------------------
+// Array is a collection of pointers
+
 // #include<stdio.h>
 
 // int main(){
@@ -478,4 +480,50 @@
 //   return 0;
 // }
 
-asacac
+// #include<stdio.h>
+
+// int main(){
+//   int age = 22;
+//   int *ptr = &age;
+  // printf("ptr = %u", ptr);
+//   ptr++;
+//   printf("ptr = %d", &ptr);
+//     ptr--;
+  // printf("ptr = %u", ptr);
+// }
+
+
+// #include<stdio.h>
+
+// int main(){
+//   int age = 23;
+//   int _age = 23;
+//   int *ptr = &age;
+//   char *_ptr  = &_age;
+//   printf("%u, %u, Difference= %u \n", ptr, _ptr, ptr-_ptr);
+//   _ptr = &age;
+//   printf("comparision = %u", ptr== _ptr);
+//   return 0;
+// }
+
+
+#include<stdio.h>
+
+void countOod(int arr[], int n);
+
+int main(){
+  int num[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+  printf("%d", countOod(num, 9));
+  return 0;
+}
+
+void countOod(int arr[], int n){
+  int counter = 0;
+  for(int i = 0; i<n; i++){
+    if(arr[i]%2 != 0){
+        counter++;
+      }
+    }
+    
+  return counter;
+}
