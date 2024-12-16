@@ -506,24 +506,137 @@
 //   return 0;
 // }
 
+// Count odd numbers
+// #include<stdio.h>
 
-#include<stdio.h>
+// int countOod(int arr[], int n);
 
-void countOod(int arr[], int n);
+// int main(){
+//   int num[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+//   printf("%d", countOod(num, 9));
+//   return 0;
+// }
 
-int main(){
-  int num[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-  printf("%d", countOod(num, 9));
-  return 0;
-}
+// int countOod(int arr[], int n){
+//   int counter = 0;
+//   for(int i = 0; i<n; i++){
+//     if(arr[i]%2 != 0){
+//         counter++;
+//       }
+//     }
 
-void countOod(int arr[], int n){
-  int counter = 0;
-  for(int i = 0; i<n; i++){
-    if(arr[i]%2 != 0){
-        counter++;
-      }
-    }
-    
-  return counter;
-}
+//   return counter;
+// }
+
+// reverse array
+// #include<stdio.h>
+
+// int arrReverse(int arr[], int n);
+
+// int main(){
+//   int list[6] = {1,2,3,4,5,6};
+//  arrReverse(list, 5);
+//   return 0;
+// }
+
+// int arrReverse(int arr[], int n){
+//   int arrR[n];
+//   for(int i = 0; i<=n; i++){
+//     arrR[n-i] = arr[i];
+//   }
+//   for(int i = 0; i<=n; i++){
+//   printf("%d \t", arrR[i]);
+// }}
+
+
+// Store First n Fibonacci numbers
+// #include<stdio.h>
+
+// int fibarr(int n);
+
+// int main(){
+//   int n;
+//   scanf("%d", &n);
+//   fibarr(n);
+//   return 0;
+// }
+
+// int fibarr(int n){
+//   int arr[n];
+//   arr[0] = 0;
+//   arr[1] = 1;
+//   for(int i = 2; i<n; i++){
+//     arr[i] = arr[i-1]+arr[i-2];
+//   }
+
+//   for(int i = 0; i<n; i++){
+//     printf("%d \t", arr[i]);
+//   }
+// }
+
+// Frequesncy of given number
+// #include<stdio.h>
+
+// int freq(int arr[], int key, int len);
+
+// int main(){
+//   int array1[13] = {1,1,1,2,2,3,4,5,5,5,5,6,6};
+//   int n;
+//   scanf("%d", &n);
+//   int count = freq(array1, n, 13);
+//   printf("%d", count);
+//   return 0;
+// }
+
+// int freq(int arr[], int key, int len){
+//   int counter = 0;
+//   for(int i = 0; i<len; i++){
+//     if(arr[i] == key){
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
+
+// Largest number in an array
+// #include<stdio.h>
+
+// int largeNum(int arr[], int n);
+
+// int main(){
+//   int array1[10] = {1,2,3,4,5,6,7,8,9,10};
+//   int result =  largeNum(array1, 10);
+//   printf("%d", result);
+//   return 0;
+// }
+
+// int largeNum(int arr[], int n){
+//   int big = 0;
+//   for(int i = 0; i<n; i++){
+//     if(arr[i]>big){
+//       big = arr[i];
+//     }
+//   }
+//   return big;
+// }
+
+// Insert element at the end of array
+// #include<stdio.h>
+
+// int insert(int arr[], int num, int len);
+
+// int main(){
+//   int array1[10] = {1,2,3,4,5};
+//   int a;
+//   scanf("%d", &a);
+//   int result = insert(array1, a, 5);
+//   for(int i = 0; i<6; i++){
+//   printf("%d \t", array1[i]);
+//   }
+//   return 0;
+// }
+
+// int insert(int arr[], int num, int len){
+//   arr[len] = num;
+// }
+
