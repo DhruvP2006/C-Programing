@@ -1,14 +1,19 @@
 #include<stdio.h>
+#include<string.h>
+
+int countLength(char arr[]);
 
 int main(){
-  int marks[2][3];
-  marks[0][0] = 90;
-  marks[0][1] = 89;
-  marks[0][2] = 78;
+  char name[100];
+  printf("Enter your Name: ");
+  fgets(name, 100, stdin);
+  printf("%d", strlen(name));
+}
 
-  marks[1][0] = 90;
-  marks[1][1] = 89;
-  marks[1][2] = 78;
-
-  printf("%d", marks[0][0]);
+int countLength(char arr[]){
+    int counter = 0;
+  for(int i = 0; arr[i] != '\0'; i++){
+    counter++;
+  }
+  return counter-1;
 }

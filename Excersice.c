@@ -640,4 +640,67 @@
 //   arr[len] = num;
 // }
 
+// Strings ---------------------------------------------------------------------------------------------------------------
+// A character array terminated by \0 (null character)
+// #include<stdio.h>
+
+// int main(){
+//   char name[] = {'D', 'h', 'r', 'u', 'v', '\0'}
+//   char name[] = "Dhruv";
+//   return 0;
+// }
+
+// #include<stdio.h>
+
+// void printString(char arr[]);
+
+// int main(){
+//   char firstName[] = "Dhruv";
+//   char lastName[] = "Pankhania"; 
+//   printString(firstName);
+//   printString(lastName);
+// }
+
+// void printString(char arr[]){
+//   for(int i = 0; arr[i]!= '\0' ;i++ ){
+//       printf("%c", arr[i]);
+//   }
+//   printf("\n");
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   char firstName[50];
+//   char fullName[50];
+//   printf("Enter your full name: ");
+//   fgets(fullName, 50, stdin);
+//   printf("Your Full name is: " );
+//   puts(fullName);
+
+//   printf("Enter your first name: ");
+//   scanf("%s", firstName);
+//   printf("Your first name is: %s", firstName);
+
+  
+//   return 0;
+// }
+
 #include<stdio.h>
+
+int countLength(char arr[]);
+
+int main(){
+  char name[100];
+  printf("Enter your Name: ");
+  fgets(name, 100, stdin);
+  printf("%d", countLength(name));
+}
+
+int countLength(char arr[]){
+    int counter = 0;
+  for(int i = 0; arr[i] != '\0'; i++){
+    counter++;
+  }
+  return counter-1;
+}
