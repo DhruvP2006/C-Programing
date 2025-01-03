@@ -686,21 +686,81 @@
 //   return 0;
 // }
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int countLength(char arr[]);
+// int countLength(char arr[]);
+
+// int main(){
+//   char name[100];
+//   printf("Enter your Name: ");
+//   fgets(name, 100, stdin);
+//   printf("%d", countLength(name));
+// }
+
+// int countLength(char arr[]){
+//     int counter = 0;
+//   for(int i = 0; arr[i] != '\0'; i++){
+//     counter++;
+//   }
+//   return counter-1;
+// }
+
+#include<stdio.h>
+#include<math.h>
+
+int Square();
+int Rectangle();
+int Circle();
+int Triangle()
 
 int main(){
-  char name[100];
-  printf("Enter your Name: ");
-  fgets(name, 100, stdin);
-  printf("%d", countLength(name));
+  printf("Chosse one: 1 - Square\n 2 - Rectangle \n 3 - Circle \n 4 - Triangle \n");
+  int choice;
+  float Area;
+  float Perimeter;
+  scanf("Enter your Choice: %d", &choice);
+  if(choice == 1){
+
+    Area, Perimeter = Square();
+  }
+  else if(choice == 2){
+   
+  }
+  else if(choice == 3){
+    int Radius;
+    scanf("Enter Radius of Circle: %d", &Radius);
+    Area =3.142*pow(Radius, 2);
+    Perimeter = 2*3.142*Radius;    
+  }
+  else if(choice == 4){
+    int Side_a, Side_b, Side_c;
+    Perimeter = Side_a + Side_b + Side_c;
+    float s = Perimeter/2;
+    Area = pow(s*(s-Side_a)*(s-Side_b)*(s-Side_c), 0.5);
+  }
+  else{
+    printf("Entered Value is not a valid choice\n");
+  }
+
+  printf("The Area of the give Shape is: %f\n", Area);
+  printf("The Perimeter of the give Shape is: %f\n", Perimeter);
+
 }
 
-int countLength(char arr[]){
-    int counter = 0;
-  for(int i = 0; arr[i] != '\0'; i++){
-    counter++;
-  }
-  return counter-1;
+int Square(){
+  int length;
+    scanf("Enter length of Side of Square: %d", &length);
+    int Area = length*length;
+    int Perimeter = 4*length;
+    return (Area, Perimeter);
+}
+
+int Rectangle(){
+   int length;
+    int breadth;
+    scanf("Enter length of Rectangle: %d", &length);
+    scanf("Enter breadth of Rectabgle: %d", &breadth);
+    int Area = length*breadth;
+    int Perimeter = (2*breadth)+(2*length);
+    return (Area, Perimeter);
 }
