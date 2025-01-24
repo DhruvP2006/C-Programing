@@ -44,11 +44,11 @@
 //   // printf("Enter name ");
 //   // scanf("%s", &name);
 //   // printf("%s\n", name);
-  
+
 //   puts("Enter name");
 //   gets(name);
 //   puts(name);
-  
+
 //   return 0;
 // }
 
@@ -71,10 +71,10 @@
 //   printf("Enter a number:");
 //   scanf("%d", &num);
 //   if(num%2==0){
-//     printf("It is an Even Number"); 
+//     printf("It is an Even Number");
 //   }
 //   else{
-//     printf("It is an Odd Number"); 
+//     printf("It is an Odd Number");
 //   }
 //   return 0;
 // }
@@ -93,7 +93,7 @@
 //   }
 //   else{
 //   printf("%d and are equal %d", a, b);
-  
+
 //   }
 // }
 
@@ -114,7 +114,7 @@
 //     printf("Your are too old to work");
 //   }
 //   }
-  
+
 //   return 0;
 // }
 
@@ -151,7 +151,7 @@
 //   getchar();
 //   scanf("%c", &operator);
 //   switch(operator){
-//     case '+': 
+//     case '+':
 //       printf("The addition is: %d", a+b);
 //       break;
 //     case '-':
@@ -173,25 +173,135 @@
 //   return 0;
 // }
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int main(){
-  printf("Enter a character");
-  char a;
-  scanf("%c", &a);
-  switch(a){
-    case 'a':
-    case 'e':
-    case 'i':
-    case 'o':
-    case 'u':
-    printf("Vowel");
-    break;
-    
-    default:
-    printf("Consonant");
-    break;
-  }
+// int main(){
+//   printf("Enter a character");
+//   char a;
+//   scanf("%c", &a);
+//   switch(a){
+//     case 'a':
+//     case 'e':
+//     case 'i':
+//     case 'o':
+//     case 'u':
+//     printf("Vowel");
+//     break;
 
-  }
+//     default:
+//     printf("Consonant");
+//     break;
+//   }
 
+//   }
+
+// #include<stdio.h>
+
+// int main(){
+//   int i, j=1;
+//   printf("Enter a Number: ");
+//   scanf("%d", &i);
+//   while(j<=i){
+//     printf("%d \n", j);
+//     j++;
+//   }
+
+// return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//   int i, j, answer;
+//   printf("Enter starting Number: ");
+//   scanf("%d", &i);
+//   printf("Enter ending Number: ");
+//   scanf("%d", &j);
+//   while (i <= j)
+//   {
+//     answer += i;
+//     i++;
+//   }
+//   printf("The sum of n numbers is: %d", answer);
+
+//   return 0;
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int end;
+//   printf("Enter a Number: ");
+//   scanf("%d", &end);
+//   int i = 1, j = 1;
+// while(end-1>=0){
+//   printf("%d \t %d \t", i, j);
+//   i = i+j;
+//   j = i+j;
+//   end--;
+// }
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int a, fact = 1;
+//   printf("Enter a Number: ");
+//   scanf("%d", &a);
+//   while(a>1){
+//     fact *= a;
+//     a--;
+//   }
+
+//   printf("%d \n", fact);
+//   do{
+//     fact *= a;
+//     a--;
+//   }
+//   while(a>1);
+//   printf("%d \n", fact);
+//   return 0;
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int a, i=0;
+//   printf("Enter a number: ");
+//   scanf("%d", &a);
+//   do{
+//     i%2? printf("%d \t", i) : printf(" \n");
+//     i%2? printf(" \n") : printf("%d \t", i);
+//     i++;
+//   }
+//   while(i<=a);
+//   return 0;
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int a;
+//   printf("Enter a number: ");
+//   scanf("%d", &a);
+//   for(int i =0; i<=a; i++){
+//     printf("%d \t", i);
+//   }
+//   for(int i =a; i>0; i--){
+//     printf("%d \t", i);
+//   }
+//   return 0;
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int a, fact = 1;
+//   printf("Enter a Number: ");
+//   scanf("%d", &a);
+//   for(int i = 1; i<=a; i++){
+//   fact *= i;
+//   }
+//   printf("%d", fact);
+// }
