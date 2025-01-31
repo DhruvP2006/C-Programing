@@ -305,3 +305,40 @@
 //   }
 //   printf("%d", fact);
 // }
+
+#include<stdio.h>
+
+int main(){
+  int n, fact, powX, x;
+  float sum = 0.0;
+  printf("\nEnter a value of n: ");
+  scanf("%d", &n);
+  printf("\nEnter a value of x: ");
+  scanf("%d", &x);
+  printf("e^%d = ", x);
+  for(int i =0; i<=n; i++){
+  fact = 1;
+  for(int j = i; j>0; j--){
+  if(j ==0){
+    fact = 1;
+    break;
+  }
+  fact *= j;
+  }
+  powX =1;
+  for(int k =i; k>=1; k--){
+    if(k==0){
+      break;
+         }
+    powX *= x;
+  }
+
+  printf("%d/%d", powX, fact);
+  if(i!=n){
+      printf(" + ");
+  }
+  sum += ((float)powX/fact);
+    }
+    printf("\ne^%d = %f", x, sum);
+  return 0;
+}
