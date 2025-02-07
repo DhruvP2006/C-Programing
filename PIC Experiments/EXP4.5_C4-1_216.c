@@ -26,7 +26,7 @@ printf("Enter the size of the second 2D array you want to create: ");
   int arrSum[2][2];
   for(int i = 0; i<2; i++){
     for(int j = 0; j<2; j++){
-      arrSum[i][j] = arr1[i][j] + arr2[i][j];
+      arrSum[i][j] = arr1[i][j] + arr2[i][j]; 
         }}
 
   printf("The First array is: \n");

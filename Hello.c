@@ -404,36 +404,36 @@
 //   return 0;
 // }
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int main(){
-  int sizei, sizej;
-printf("Enter the size of the array you want to create: ");
-      scanf("%d %d", &sizei, &sizej);
-  int arr[sizei][sizej], sum;
-printf("Enter the Numbers for the array: ");
-  for(int i = 0; i<sizei; i++){
-    for(int j = 0; j<sizej; j++){
-      scanf("%d", &arr[i][j]);
-    }
-  }
+// int main(){
+//   int sizei, sizej;
+// printf("Enter the size of the array you want to create: ");
+//       scanf("%d %d", &sizei, &sizej);
+//   int arr[sizei][sizej], sum;
+// printf("Enter the Numbers for the array: ");
+//   for(int i = 0; i<sizei; i++){
+//     for(int j = 0; j<sizej; j++){
+//       scanf("%d", &arr[i][j]);
+//     }
+//   }
 
-printf("The array you entered is: \n");
-for(int i = 0; i<sizei; i++){
-    for(int j = 0; j<sizej; j++){
-      printf("%d \t", arr[i][j]);
-    }
-    printf("\n");
-  }
+// printf("The array you entered is: \n");
+// for(int i = 0; i<sizei; i++){
+//     for(int j = 0; j<sizej; j++){
+//       printf("%d \t", arr[i][j]);
+//     }
+//     printf("\n");
+//   }
 
- for(int i = 0; i<sizei; i++){
-    for(int j = 0; j<sizej; j++){
-      sum += arr[i][j];
-    }
-} 
-printf("The sum of all the numbers of the array is: %d", sum);
-  return 0;
-}
+//  for(int i = 0; i<sizei; i++){
+//     for(int j = 0; j<sizej; j++){
+//       sum += arr[i][j];
+//     }
+// } 
+// printf("The sum of all the numbers of the array is: %d", sum);
+//   return 0;
+// }
 
 // #include<stdio.h>
 
@@ -470,3 +470,24 @@ printf("The sum of all the numbers of the array is: %d", sum);
 //   return 0;
 
 // }
+
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+  char str[100], strCpy[100], strRev[100];
+  printf("Enter a string: ");
+  gets(str);
+  int i;
+  for(i = 0; str[i]!='\0'; i++){
+    strCpy[i] = str[i];
+  }
+  strCpy[i] = '\0'; 
+  printf("The copied string is: %s", strCpy);
+
+   for(i = 0; str[i]!='\0'; i++){
+    strRev[i] = str[strlen(str)-i-1];
+  }
+  printf("\nThe reversed string is: %s", strRev);
+  return 0;
+}
