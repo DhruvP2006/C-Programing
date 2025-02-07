@@ -306,39 +306,167 @@
 //   printf("%d", fact);
 // }
 
+// #include<stdio.h>
+
+// int main(){
+//   int n, fact, powX, x;
+//   float sum = 0.0;
+//   printf("\nEnter a value of n: ");
+//   scanf("%d", &n);
+//   printf("\nEnter a value of x: ");
+//   scanf("%d", &x);
+//   printf("e^%d = ", x);
+//   for(int i =0; i<=n; i++){
+//   fact = 1;
+//   for(int j = i; j>0; j--){
+//   if(j ==0){
+//     fact = 1;
+//     break;
+//   }
+//   fact *= j;
+//   }
+//   powX =1;
+//   for(int k =i; k>=1; k--){
+//     if(k==0){
+//       break;
+//          }
+//     powX *= x;
+//   }
+
+//   printf("%d/%d", powX, fact);
+//   if(i!=n){
+//       printf(" + ");
+//   }
+//   sum += ((float)powX/fact);
+//     }
+//     printf("\ne^%d = %f", x, sum);
+//   return 0;
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int arr1[5] = {1, 2, 3, 4 ,5};
+//   float arr2[5]  = {1.19, 2.54, 3.29, 4.87 ,5.34};
+//   char arr3[5] = {'K', 'J', 'S', 'C', 'E'};
+//   for(int i = 0; i<5; i++){
+//     printf("%d \t", arr1[i]);
+//   }
+//     printf("\n");
+//   for(int i = 0; i<5; i++){
+//     printf("%f \t", arr2[i]);
+//   }
+//     printf("\n");
+//     for(int i = 0; i<5; i++){
+//     printf("%c \t", arr3[i]);
+//   }
+//   return 0;
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int arr[3];
+//   printf("Enter 3 Numbers: ");
+//   for(int i = 0; i<3; i++){
+//     scanf("%d", &arr[i]);
+//   }
+//   for(int i = 0; i<3; i++){
+//     printf("%d \t", arr[i]);
+//   }
+
+//   return 0;
+// }
+
+// #include<stdio.h>
+
+// int main(){
+//   int arr[3][3];
+// printf("Enter 9 Numbers: ");
+//   for(int i = 0; i<3; i++){
+//     for(int j = 0; j<3; j++){
+//       scanf("%d", &arr[i][j]);
+//     }
+//   }
+
+//   int i, j;
+//   printf("Enter two Numbers less than 3: ");
+//   scanf("%d", &i);
+//   scanf("%d", &j);
+//   printf("%d\n", arr[i][j]);
+
+//   for(int i = 0; i<3; i++){
+//     for(int j = 0; j<3; j++){
+//       printf("%d \t", arr[i][j]);
+//     }
+//     printf("\n");
+//   }
+//   return 0;
+// }
+
 #include<stdio.h>
 
 int main(){
-  int n, fact, powX, x;
-  float sum = 0.0;
-  printf("\nEnter a value of n: ");
-  scanf("%d", &n);
-  printf("\nEnter a value of x: ");
-  scanf("%d", &x);
-  printf("e^%d = ", x);
-  for(int i =0; i<=n; i++){
-  fact = 1;
-  for(int j = i; j>0; j--){
-  if(j ==0){
-    fact = 1;
-    break;
-  }
-  fact *= j;
-  }
-  powX =1;
-  for(int k =i; k>=1; k--){
-    if(k==0){
-      break;
-         }
-    powX *= x;
+  int sizei, sizej;
+printf("Enter the size of the array you want to create: ");
+      scanf("%d %d", &sizei, &sizej);
+  int arr[sizei][sizej], sum;
+printf("Enter the Numbers for the array: ");
+  for(int i = 0; i<sizei; i++){
+    for(int j = 0; j<sizej; j++){
+      scanf("%d", &arr[i][j]);
+    }
   }
 
-  printf("%d/%d", powX, fact);
-  if(i!=n){
-      printf(" + ");
-  }
-  sum += ((float)powX/fact);
+printf("The array you entered is: \n");
+for(int i = 0; i<sizei; i++){
+    for(int j = 0; j<sizej; j++){
+      printf("%d \t", arr[i][j]);
     }
-    printf("\ne^%d = %f", x, sum);
+    printf("\n");
+  }
+
+ for(int i = 0; i<sizei; i++){
+    for(int j = 0; j<sizej; j++){
+      sum += arr[i][j];
+    }
+} 
+printf("The sum of all the numbers of the array is: %d", sum);
   return 0;
 }
+
+// #include<stdio.h>
+
+// int main(){
+//   int arr1[2][2]={{1,2},{3,4}};
+//   int arr2[2][2]={{1,2},{3,4}};
+//   int arrSum[2][2];
+//   for(int i = 0; i<2; i++){
+//     for(int j = 0; j<2; j++){
+//       arrSum[i][j] = arr1[i][j] + arr2[i][j]; 
+//         }}
+
+//   printf("The First array is: \n");
+// for(int i = 0; i<2; i++){
+//     for(int j = 0; j<2; j++){
+//       printf("%d \t", arr1[i][j]);
+//     }
+//     printf("\n");
+//   }
+//   printf("The Second array is: \n");
+// for(int i = 0; i<2; i++){
+//     for(int j = 0; j<2; j++){
+//       printf("%d \t", arr2[i][j]);
+//     }
+//     printf("\n");
+//   }
+//   printf("The sum of the two arrays is: \n");
+// for(int i = 0; i<2; i++){
+//     for(int j = 0; j<2; j++){
+//       printf("%d \t", arrSum[i][j]);
+//     }
+//     printf("\n");
+//   }
+//   return 0;
+
+// }
