@@ -24,7 +24,7 @@ printf("Enter the size of the second 2D array you want to create: ");
       scanf("%d", &arr2[i][j]);
     }
   }
-
+  
   int result[size1i][size2j];
 
   arrMultiplication(size1i, size1j, arr1, size2i, size2j, arr2, result);

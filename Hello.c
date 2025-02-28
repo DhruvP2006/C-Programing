@@ -471,23 +471,76 @@
 
 // }
 
-#include<stdio.h>
-#include<string.h>
+// #include<stdio.h>
+// #include<string.h>
 
-int main(){
-  char str[100], strCpy[100], strRev[100];
-  printf("Enter a string: ");
-  gets(str);
-  int i;
-  for(i = 0; str[i]!='\0'; i++){
-    strCpy[i] = str[i];
-  }
-  strCpy[i] = '\0'; 
-  printf("The copied string is: %s", strCpy);
+// int main(){
+//   char str[100], strCpy[100], strRev[100];
+//   printf("Enter a string: ");
+//   gets(str);
+//   int i;
+//   for(i = 0; str[i]!='\0'; i++){
+//     strCpy[i] = str[i];
+//   }
+//   strCpy[i] = '\0'; 
+//   printf("The copied string is: %s", strCpy);
 
-   for(i = 0; str[i]!='\0'; i++){
-    strRev[i] = str[strlen(str)-i-1];
-  }
-  printf("\nThe reversed string is: %s", strRev);
-  return 0;
-}
+//    for(i = 0; str[i]!='\0'; i++){
+//     strRev[i] = str[strlen(str)-i-1];
+//   }
+//   printf("\nThe reversed string is: %s", strRev);
+//   return 0;
+// }
+
+// #include<stdio.h>
+// #include<string.h>
+
+// int main(){
+// char str1[100], str2[100], strCpy[100];
+// int option;
+//   printf("Enter the First String: ");
+//   gets(str1);
+//   printf("Enter the Second String: ");
+//   gets(str2);
+// int exit = 1;
+// while(exit){
+// printf("Press 1, to compare the lengths of the two strings\nPress 2, to copy string 1 into another variable\nPress 3, to concatenate string 1 and string 2\nPress 4, To compare the two strings for equaltiy\nPress 5, for reversing String 2\nPress 6, to exit\n");
+// scanf("%d", &option);
+// switch (option)
+// {
+// case 1:
+//    if(strlen(str1)>strlen(str2)){
+//     printf("Length of String 1 is greater than string 2\n");
+//   } else if(strlen(str1)<strlen(str2)){
+//     printf("Length of String 2 is greater than string 1\n");
+//   } else{
+//     printf("Both Strings are of the same Length\n");
+//   }
+//   break;
+// case 2:
+//   strcpy(strCpy, str1);
+//   printf("String 1 copied into another variable: %s\n", strCpy);
+//   break;
+// case 3:
+//   strcat(str1, str2);
+//   printf("String 1 and String 2 are concatenated: %s\n", str1);
+//   break;
+// case 4:
+//   if(strcmp(str1, str2)==0){
+//     printf("%s and %s are equal\n", str1, str2);
+//   } else{
+//     printf("%s and %s are not equal\n", str1, str2);
+//   }
+//   break;
+// case 5:
+//   strrev(str2);
+//   printf("String 2 reversed: %s", str2);
+//   break;
+// case 6:
+//   exit = 0;
+//   break;
+// default:
+//   printf("Enter a Valid Input!");
+//   break;
+//   }  }
+// }

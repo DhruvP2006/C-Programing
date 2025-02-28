@@ -3,22 +3,19 @@
 int main(){
 int sizei;
 printf("Enter the size of the array you want to create: ");
-      scanf("%d", &sizei);
-  int arr[sizei], ascendingArr[sizei], decendingArr[sizei];
+  scanf("%d", &sizei);
+int arr[sizei], ascendingArr[sizei], decendingArr[sizei];
   printf("Enter the Numbers for the array: ");
   for(int i = 0; i<sizei; i++){
   scanf("%d", &arr[i]);
+    ascendingArr[i] = arr[i];
+    decendingArr[i] = arr[i];
   }
 
 printf("The entered array is: \n");
   for(int j = 0; j<sizei; j++){
     printf("%d \t", arr[j]);
   }
-
-  for(int j = 0; j<sizei; j++){
-    ascendingArr[j] = arr[j];
-    decendingArr[j] = arr[j];
-   }
 
 for(int i = 0; i<sizei; i++){
 for(int j = i; j<sizei; j++){
@@ -28,12 +25,7 @@ if(ascendingArr[i]>ascendingArr[j]){
   ascendingArr[i] = ascendingArr[j];
   ascendingArr[j] = temp;
 }
-}
-}
-
-for(int i = 0; i<sizei; i++){
-for(int j = i; j<sizei; j++){
-int temp = 0;
+temp = 0;
 if(decendingArr[i]<decendingArr[j]){
   temp = decendingArr[i];
   decendingArr[i] = decendingArr[j];
