@@ -1,0 +1,20 @@
+{
+  "cpp": {
+    "prefix": "cpp",
+    "body": ["#include <stdio.h>", "int main() {", "", "    return 0;", "}"],
+    "description": "CPP boilerplate"
+  },
+  "competitive": {
+    "prefix": "compt",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "int main() {",
+      "",
+      "    return 0;",
+      "}"
+    ],
+    "description": "Competitive boilerplate"
+  }
+}

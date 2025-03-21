@@ -430,7 +430,7 @@
 //     for(int j = 0; j<sizej; j++){
 //       sum += arr[i][j];
 //     }
-// } 
+// }
 // printf("The sum of all the numbers of the array is: %d", sum);
 //   return 0;
 // }
@@ -443,7 +443,7 @@
 //   int arrSum[2][2];
 //   for(int i = 0; i<2; i++){
 //     for(int j = 0; j<2; j++){
-//       arrSum[i][j] = arr1[i][j] + arr2[i][j]; 
+//       arrSum[i][j] = arr1[i][j] + arr2[i][j];
 //         }}
 
 //   printf("The First array is: \n");
@@ -482,7 +482,7 @@
 //   for(i = 0; str[i]!='\0'; i++){
 //     strCpy[i] = str[i];
 //   }
-//   strCpy[i] = '\0'; 
+//   strCpy[i] = '\0';
 //   printf("The copied string is: %s", strCpy);
 
 //    for(i = 0; str[i]!='\0'; i++){
@@ -544,3 +544,48 @@
 //   break;
 //   }  }
 // }
+
+// #include <stdio.h>
+
+// int factorial(int n);
+
+// int main() {
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     printf("Factorial of %d is %d\n", num, factorial(num));
+//     return 0;
+// }
+
+// int factorial(int n) {
+//     if (n == 0)
+//         return 1;
+//     return n * factorial(n - 1);
+// }
+
+#include <stdio.h>
+
+int main()
+{
+
+    int *pc, c;
+    c = 22;
+
+    printf("Address of c: %p\n", &c);
+    printf("Address of pc: %p\n", &pc);
+    printf("Value of c: %d\n\n", c);
+    pc = &c;
+
+    printf("Address of pointer pc: %p\n", pc);
+    printf("Content of pointer pc: %d\n\n", *pc);
+    c = 11;
+
+    printf("Address of pointer pc: %p\n", pc);
+    printf("Content of pointer pc: %d\n\n", *pc);
+
+    *pc = 2;
+    printf("Address of c: %p\n", &c);
+    printf("Value of c: %d\n\n", c);
+
+    return 0;
+}
