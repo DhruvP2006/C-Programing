@@ -67,8 +67,8 @@
 //   return 0;
 // }
 
-//grading of marks
-// #include<stdio.h>
+// grading of marks
+//  #include<stdio.h>
 
 // int main(){
 //   int marks;
@@ -89,8 +89,8 @@
 //   return 0;
 // }
 
-//check upper or lower case
-// #include<stdio.h>
+// check upper or lower case
+//  #include<stdio.h>
 
 // int main(){
 //   char ch;
@@ -122,8 +122,8 @@
 // return 0;
 // }
 
-//factorial
-// #include<stdio.h>
+// factorial
+//  #include<stdio.h>
 
 // int main(){
 //   int num;
@@ -161,8 +161,8 @@
 //   printf("%d", j);
 // }
 
-//functions
-// #include<stdio.h>
+// functions
+//  #include<stdio.h>
 
 // void indian();
 // void french();
@@ -181,8 +181,8 @@
 //   printf("Bonjour\n");
 // }
 
-//sum function
-// #include<stdio.h>
+// sum function
+//  #include<stdio.h>
 
 // int sum(int num1, int num2);
 
@@ -198,11 +198,11 @@
 
 // int sum(int num1, int num2){
 //   return num1 + num2;
-  
+
 // }
 
-//tbale using function
-// #include<stdio.h>
+// tbale using function
+//  #include<stdio.h>
 
 // int calcPrice(float price);
 
@@ -339,7 +339,6 @@
 //   return((science+math+sanskrit)/3);
 // }
 
-
 // print fibonacci series
 // #include<stdio.h>
 
@@ -365,8 +364,8 @@
 
 // Pointer ----------------------------------------------------------------
 // * - Value at address
-// & - address of 
-// to print address stored in a pointer variable use %p for hexadeciaml, %u - unsigned int 
+// & - address of
+// to print address stored in a pointer variable use %p for hexadeciaml, %u - unsigned int
 // #include<stdio.h>
 
 // int main(){
@@ -377,7 +376,6 @@
 // }
 
 // #include<stdio.h>
-
 
 // void square (int n);
 // void _square(int *n);
@@ -444,7 +442,6 @@
 
 // void maths(int a, int b, int *sum, int *product, int *average);
 
-
 // int main(){
 //   int x =23, y = 33;
 //   int sum, product, average;
@@ -459,7 +456,6 @@
 //   *product = a*b;
 //   *average = (a+b)/2;
 // }
-
 
 // Arrays --------------------------------------------------------------------------------------
 // Array is a collection of pointers
@@ -485,13 +481,12 @@
 // int main(){
 //   int age = 22;
 //   int *ptr = &age;
-  // printf("ptr = %u", ptr);
+// printf("ptr = %u", ptr);
 //   ptr++;
 //   printf("ptr = %d", &ptr);
 //     ptr--;
-  // printf("ptr = %u", ptr);
+// printf("ptr = %u", ptr);
 // }
-
 
 // #include<stdio.h>
 
@@ -547,7 +542,6 @@
 //   for(int i = 0; i<=n; i++){
 //   printf("%d \t", arrR[i]);
 // }}
-
 
 // Store First n Fibonacci numbers
 // #include<stdio.h>
@@ -656,7 +650,7 @@
 
 // int main(){
 //   char firstName[] = "Dhruv";
-//   char lastName[] = "Pankhania"; 
+//   char lastName[] = "Pankhania";
 //   printString(firstName);
 //   printString(lastName);
 // }
@@ -682,7 +676,6 @@
 //   scanf("%s", firstName);
 //   printf("Your first name is: %s", firstName);
 
-  
 //   return 0;
 // }
 
@@ -705,3 +698,307 @@
 //   return counter-1;
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//   int *pc, c;
+//   c = 5;
+//   pc = &c;
+//   c = 1;
+//   printf("%d\n", c);
+//   printf("%d\n", *pc);
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main()
+// {
+//   int num;
+//   FILE *fptr;
+
+//   // use appropriate location if you are using MacOS or Linux
+//   fptr = fopen("C:\\program.txt", "w");
+
+//   if (fptr == NULL)
+//   {
+//     printf("Error!");
+//     exit(1);
+//   }
+
+//   printf("Enter num: ");
+//   scanf("%d", &num);
+
+//   fprintf(fptr, "%d", num);
+//   fclose(fptr);
+
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main()
+// {
+//   int num;
+//   FILE *fptr;
+
+//   if ((fptr = fopen("program.txt", "r")) == NULL)
+//   {
+//     printf("Error! opening file");
+
+//     exit(1);
+//   }
+
+//   fscanf(fptr, "%d", &num);
+
+//   printf("Value of n=%d", num);
+//   fclose(fptr);
+
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// struct threeNum
+// {
+//   int n1, n2, n3;
+// };
+
+// int main()
+// {
+//   int n;
+//   struct threeNum num;
+//   FILE *fptr;
+
+//   if ((fptr = fopen("program.bin", "wb")) == NULL)
+//   {
+//     printf("Error! opening file");
+
+//     // Program exits if the file pointer returns NULL.
+//     exit(1);
+//   }
+
+//   for (n = 1; n < 5; ++n)
+//   {
+//     num.n1 = n;
+//     num.n2 = 5 * n;
+//     num.n3 = 5 * n + 1;
+//     fwrite(&num, sizeof(struct threeNum), 1, fptr);
+//   }
+//   fclose(fptr);
+
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// struct threeNum
+// {
+//   int n1, n2, n3;
+// };
+
+// int main()
+// {
+//   int n;
+//   struct threeNum num;
+//   FILE *fptr;
+
+//   if ((fptr = fopen("program.bin", "rb")) == NULL)
+//   {
+//     printf("Error! opening file");
+
+//     // Program exits if the file pointer returns NULL.
+//     exit(1);
+//   }
+
+//   for (n = 1; n < 5; ++n)
+//   {
+//     fread(&num, sizeof(struct threeNum), 1, fptr);
+//     printf("n1: %d\tn2: %d\tn3: %d\n", num.n1, num.n2, num.n3);
+//   }
+//   fclose(fptr);
+
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+
+// int main()
+// {
+//   int *numbers;
+//   int i, sum = 0;
+//   int n;
+//   printf("Enter the number of elements: ");
+//   scanf("%d", &n);
+//   numbers = (int *)malloc(n * sizeof(int));
+//   if (numbers == NULL)
+//   {
+//     printf("Memory allocation failed\n");
+//     return 1;
+//   }
+//   for (i = 0; i < n; i++)
+//   {
+//     printf("Enter number %d: ", i + 1);
+//     scanf("%d", &numbers[i]);
+//     sum += numbers[i];
+//   }
+//   printf("Sum of the elements: %d\n", sum);
+//   free(numbers);
+//   return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main()
+// {
+//   int *numbers;
+//   int original_size = 5;
+//   int new_size = 8;
+//   numbers = (int *)malloc(original_size * sizeof(int));
+//   if (numbers == NULL)
+//   {
+//     printf("Memory allocation failed.\n");
+//     return 1;
+//   }
+//   for (int i = 0; i < original_size; i++)
+//   {
+//     numbers[i] = i + 1;
+//   }
+//   printf("Entered Array: ");
+//   for (int i = 0; i < original_size; i++)
+//   {
+//     printf("%d ", numbers[i]);
+//   }
+//   printf("\n");
+//   printf("Reallocating memory\n");
+//   numbers = (int *)realloc(numbers, new_size * sizeof(int));
+//   if (numbers == NULL)
+//   {
+//     printf("Memory reallocation failed.\n");
+//     return 1;
+//   }
+//   for (int i = original_size; i < new_size; i++)
+//   {
+//     numbers[i] = i + 1;
+//   }
+//   printf("New array: ");
+//   for (int i = 0; i < new_size; i++)
+//   {
+//     printf("%d ", numbers[i]);
+//   }
+//   printf("\n");
+//   free(numbers);
+//   return 0;
+// }
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int stack[100], choice, n, top, x, i;
+
+void push();
+int pop();
+int peek();
+int display();
+
+int main()
+{
+  top = -1;
+  printf("Number of Elements: ");
+  scanf("%d", &n);
+  int flag = 1;
+  while (flag)
+  {
+    int choice;
+    printf("Enter 1 to Push\nEnter 2 to Pop\nEnter 3 to Peek\nEnter 4 to Display\nEnter 5 to Exit\n");
+    scanf("%d", &choice);
+    switch (choice)
+    {
+    case 1:
+      printf("Enter the element to be pushed: ");
+      scanf("%d", &x);
+      push(x);
+      break;
+    case 2:
+      x = pop();
+      printf("Popped element is %d\n", x);
+      pop();
+      break;
+    case 3:
+      peek();
+      break;
+    case 4:
+      display();
+      break;
+    case 5:
+      flag = 0;
+      break;
+    default:
+      printf("Enter a Valid Choice");
+      break;
+    }
+  }
+}
+
+void push()
+{
+  if (top >= n - 1)
+  {
+    printf("Stack overflow\n");
+  }
+  else
+  {
+    top++;
+    stack[top] = x;
+  }
+}
+
+int pop()
+{
+  if (top < 0)
+  {
+    printf("Stack underflow\n");
+  }
+  else
+  {
+    x = stack[top];
+    top--;
+  }
+  return x;
+}
+
+int display()
+{
+  if (top < 0)
+    printf("Stack is empty\n");
+  else
+  {
+    printf("Stack elements are: \n");
+    for (i = top; i >= 0; i--)
+      printf("%d\n", stack[i]);
+  }
+
+  return 0;
+}
+
+int peek()
+{
+
+  if (top < 0)
+    printf("Stack is empty\n");
+  else
+  {
+    printf("Top element of the Stack is: \n");
+    printf("%d\n", stack[top]);
+  }
+
+  return 0;
+}

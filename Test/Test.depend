@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1742578488 source:c:\users\dhruv\onedrive\documents\github\c-programing\test\main.c
+1744300969 source:c:\users\dhruv\onedrive\documents\github\c-programing\test\main.c
 	<stdio.h>
 	<string.h>
+	<stdbool.h>
+	<stdlib.h>
 

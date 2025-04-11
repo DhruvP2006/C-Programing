@@ -563,29 +563,228 @@
 //     return n * factorial(n - 1);
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
+// int main()
+// {
 
-    int *pc, c;
-    c = 22;
+//     int *pc, c;
+//     c = 22;
 
-    printf("Address of c: %p\n", &c);
-    printf("Address of pc: %p\n", &pc);
-    printf("Value of c: %d\n\n", c);
-    pc = &c;
+//     printf("Address of c: %p\n", &c);
+//     printf("Address of pc: %p\n", &pc);
+//     printf("Value of c: %d\n\n", c);
+//     pc = &c;
 
-    printf("Address of pointer pc: %p\n", pc);
-    printf("Content of pointer pc: %d\n\n", *pc);
-    c = 11;
+//     printf("Address of pointer pc: %p\n", pc);
+//     printf("Content of pointer pc: %d\n\n", *pc);
+//     c = 11;
 
-    printf("Address of pointer pc: %p\n", pc);
-    printf("Content of pointer pc: %d\n\n", *pc);
+//     printf("Address of pointer pc: %p\n", pc);
+//     printf("Content of pointer pc: %d\n\n", *pc);
 
-    *pc = 2;
-    printf("Address of c: %p\n", &c);
-    printf("Value of c: %d\n\n", c);
+//     *pc = 2;
+//     printf("Address of c: %p\n", &c);
+//     printf("Value of c: %d\n\n", c);
 
-    return 0;
-}
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// void swap(int *a, int *b);
+
+// int main()
+// {
+//     int m, n;
+//     printf("Enter Two Numbers: ");
+//     scanf("%d %d", &m, &n);
+//     printf("Numbers before swapping:\n m: %d\n n: %d\n", m, n);
+//     swap(&m, &n);
+//     printf("Numbers after swapping:\n m: %d\n n: %d\n", m, n);
+//     return 0;
+// }
+
+// void swap(int *a, int *b)
+// {
+//     int temp;
+//     temp = *a;
+//     *a = *b;
+//     *b = temp;
+// }
+
+// #include <stdio.h>
+
+// int add(int *a, int *b);
+
+// int main()
+// {
+//     int x, y;
+//     printf("Enter two Numbers to be addded: ");
+//     scanf("%d %d", &x, &y);
+//     add(&x, &y);
+//     printf("The Sum of the Two Numbers is %d", x);
+//     return 0;
+// }
+// int add(int *a, int *b)
+// {
+//     *a += *b;
+// }
+
+// #include <stdio.h>
+
+// void increment(int *x);
+
+// int main()
+// {
+//     int *p, a;
+//     printf("Enter a Number: ");
+//     scanf("%d", &a);
+//     p = &a;
+//     printf("Value before increment: %d\n", a);
+//     increment(p);
+//     printf("Value after increment: %d\n", a);
+//     return 0;
+// }
+
+// void increment(int *x)
+// {
+//     (*x)++;
+// }
+
+// #include <stdio.h>
+
+// void max(int *a, int *b);
+
+// int main()
+// {
+//     int x, y;
+//     printf("Enter two Numbers: ");
+//     scanf("%d %d", &x, &y);
+//     max(&x, &y);
+//     return 0;
+// }
+
+// void max(int *a, int *b)
+// {
+//     if (*a > *b)
+//     {
+//         printf("Maximum value is %d", *a);
+//     }
+//     else if (*b > *a)
+//     {
+//         printf("Maximum value is %d", *b);
+//     }
+//     else
+//     {
+//         printf("Both the Numbers are same");
+//     }
+// }
+
+// #include <stdio.h>
+
+// void sort(int *x, int *y, int *z);
+
+// int main()
+// {
+//     int a, b, c;
+//     printf("Enter three Numbers: ");
+//     scanf("%d %d %d", &a, &b, &c);
+//     sort(&a, &b, &c);
+//     printf("The sorted Numbers are: %d %d %d", a, b, c);
+//     return 0;
+// }
+
+// void sort(int *x, int *y, int *z)
+// {
+//     int temp;
+//     if (*x > *y)
+//     {
+//         temp = *x;
+//         *x = *y;
+//         *y = temp;
+//     }
+//     if (*x > *z)
+//     {
+//         temp = *x;
+//         *x = *z;
+//         *z = temp;
+//     }
+//     if (*y > *z)
+//     {
+//         temp = *y;
+//         *y = *z;
+//         *z = temp;
+//     }
+// }
+
+// #include <stdio.h>
+
+// void perimeter(int *x, int *y, int *perimeter);
+
+// void area(int *a, int *b, int *area);
+
+// int main()
+// {
+//     int l, b, result;
+//     printf("Enter the Length & Breadth of a Rectangle: ");
+//     scanf("%d %d", &l, &b);
+//     perimeter(&l, &b, &result);
+//     printf("The Perimeter of the Rectangle is %d\n", result);
+//     area(&l, &b, &result);
+//     printf("The Area of the Rectangle is %d\n", result);
+// }
+
+// void perimeter(int *x, int *y, int *perimeter)
+// {
+//     *perimeter = 2 * ((*x) + (*y));
+// }
+
+// void area(int *a, int *b, int *area)
+// {
+//     *area = (*a) * (*b);
+// }
+
+// #include <stdio.h>
+
+// void upperCase(char *x);
+
+// int main()
+// {
+//     char a;
+//     printf("Enter a lower case Character: ");
+//     scanf("%c", &a);
+//     upperCase(&a);
+//     printf("Upper Case Character: %c", a);
+//     return 0;
+// }
+
+// void upperCase(char *x)
+// {
+//     if (*x >= 'a' && *x <= 'z')
+//     {
+//         *x = *x - 32;
+//     }
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int a, b, temp;
+//     int *p1, *p2;
+
+//     printf("Enter two numbers: ");
+//     scanf("%d %d", &a, &b);
+
+//     p1 = &a;
+//     p2 = &b;
+
+//     temp = *p1;
+//     *p1 = *p2;
+//     *p2 = temp;
+
+//     printf("After swapping: a = %d, b = %d\n", a, b);
+
+//     return 0;
+// }

@@ -9,13 +9,13 @@ enum department
   TECHNICALS
 };
 
-union sales
+struct sales
 {
   float commission;
   float salesTarget;
 };
 
-union technical
+struct technical
 {
   char projectName[1000];
   float allowance;
@@ -28,10 +28,10 @@ struct employeeDetails
   enum department dept;
   int age;
   float basicSalary;
-  union
+  struct
   {
-    union sales s;
-    union technical t;
+    struct sales s;
+    struct technical t;
   } data;
 };
 
@@ -133,6 +133,7 @@ void dataInput()
     }
     else if (dept == 1)
     {
+      emp[empCount].dept = TECHNICALS;
       printf("Enter Employee`s Project Name: ");
       scanf("%s", &emp[empCount].data.t.projectName);
       printf("Enter Employee`s Allowance: ");
@@ -161,6 +162,10 @@ void displayData()
   {
     for (int i = 0; i < empCount; i++)
     {
+      if (emp[i].id == -1)
+      {
+        i++;
+      }
       printf("Employee ID: %d\n", emp[i].id);
       printf("Employee Name: %s\n", emp[i].name);
       printf("Employee Age: %d\n", emp[i].age);
@@ -171,7 +176,7 @@ void displayData()
         printf("Employee Commision: %f\n", emp[i].data.s.commission);
         printf("Employee`s Sales Target: %f\n", emp[i].data.s.salesTarget);
       }
-      else
+      else if (emp[i].dept == TECHNICALS)
       {
         printf("Department: Technical\n");
         printf("Employee Project Name: %s\n", emp[i].data.t.projectName);
@@ -184,7 +189,7 @@ void displayData()
 void calculateSalary()
 {
   int id;
-  printf("Enter Employee ID to calculate Total Salary: ");
+  printf("Enter Employee ID to Calculate Total Salary: ");
   scanf("%d", &id);
   for (int i = 0; i < empCount; i++)
   {
@@ -200,7 +205,7 @@ void calculateSalary()
       {
         totalSalary += emp[i].data.t.allowance;
       }
-      printf("The total Salary of %s is %f\n", emp[i].name, totalSalary);
+      printf("The Total Salary of %s is %f\n", emp[i].name, totalSalary);
       break;
     }
     else
@@ -232,7 +237,7 @@ void searchById()
       else
       {
         printf("Department: Technical");
-        printf("Employee Prject Name: %s\n", emp[i].data.t.projectName);
+        printf("Employee Project Name: %s\n", emp[i].data.t.projectName);
         printf("Employee Allowance: %f\n", emp[i].data.t.allowance);
       }
     }
@@ -243,7 +248,7 @@ void searchById()
   }
   if (!found)
   {
-    printf("Enter Vaid Employee ID.\n");
+    printf("Enter Valid Employee ID.\n");
   }
 }
 
@@ -293,7 +298,7 @@ void update()
   }
   if (!found)
   {
-    printf("Enter Vaid Employee ID\n");
+    printf("Enter Valid Employee ID\n");
   }
 }
 
@@ -306,7 +311,7 @@ void delete()
   {
     if (emp[i].id == id)
     {
-      emp[i].id = 0;
+      emp[i].id = -1;
       strcpy(emp[i].name, "");
       emp[i].age = 0;
       emp[i].basicSalary = 0;
@@ -320,7 +325,6 @@ void delete()
         strcpy(emp[i].data.t.projectName, "");
         emp[i].data.t.allowance = 0;
       }
-      empCount--;
       printf("Employee Data Deleted Successfully\n");
     }
   }
