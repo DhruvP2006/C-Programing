@@ -788,3 +788,12 @@
 
 //     return 0;
 // }
+
+#include <stdio.h>
+
+int main()
+{
+
+  printf("%d", 10 + 5 * 2);
+  return 0;
+}
