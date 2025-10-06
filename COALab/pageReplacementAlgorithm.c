@@ -83,6 +83,14 @@ void lru_page_replacement(int reference_string[], int num_pages, int capacity)
   printf("\nThe no of page faults is:- %d\n", page_faults);
   printf("The no of page hits is:- %d\n", hits);
 
+  if (num_pages > 0)
+  {
+    double hit_ratio = (double)hits / num_pages * 100.0;
+    double miss_ratio = (double)page_faults / num_pages * 100.0;
+    printf("The page hit ratio is:- %.2f%%\n", hit_ratio);
+    printf("The page miss ratio is:- %.2f%%\n", miss_ratio);
+  }
+
   free(cache);
   for (int i = 0; i < page_faults; i++)
   {
